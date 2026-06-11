@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +9,23 @@
 
 <style>
 
-*{
+html,body{
 margin:0;
 padding:0;
-box-sizing:border-box;
+width:100%;
+overflow-x:hidden;
+background:transparent;
+font-family:'Poppins',sans-serif;
+color:white;
 }
 
-body{
-font-family:'Poppins',sans-serif;
-background:transparent;
-color:white;
-overflow-x:hidden;
+*{
+box-sizing:border-box;
 }
 
 .hero-wrapper{
 width:100%;
-padding:60px 20px 80px;
+padding:28px 18px 40px;
 }
 
 .hero-container{
@@ -36,18 +36,18 @@ margin:auto;
 .hero-label{
 display:inline-block;
 background:#d61f26;
-padding:10px 20px;
+padding:10px 18px;
 border-radius:6px;
-font-size:14px;
+font-size:13px;
 font-weight:700;
-margin-bottom:30px;
+margin-bottom:22px;
 letter-spacing:1px;
 box-shadow:0 5px 18px rgba(214,31,38,0.35);
 }
 
 .hero-title{
 font-family:'Bebas Neue',sans-serif;
-font-size:clamp(54px,9vw,110px);
+font-size:clamp(42px,11vw,88px);
 line-height:0.9;
 margin:0;
 max-width:760px;
@@ -56,7 +56,7 @@ text-shadow:0 4px 20px rgba(0,0,0,0.35);
 }
 
 .hero-small{
-font-size:0.45em;
+font-size:0.42em;
 display:block;
 color:#C9A84C;
 margin-bottom:10px;
@@ -68,19 +68,20 @@ text-shadow:0 0 18px rgba(255,209,102,0.35);
 }
 
 .hero-sub{
-font-size:clamp(20px,3vw,30px);
+font-size:clamp(18px,4vw,28px);
 font-weight:700;
 color:#ff4d4d;
-margin-top:20px;
-margin-bottom:30px;
+margin-top:18px;
+margin-bottom:24px;
+line-height:1.3;
 }
 
 .hero-desc{
 max-width:620px;
-font-size:18px;
-line-height:1.9;
+font-size:16px;
+line-height:1.8;
 color:#f0f0f0;
-margin-bottom:40px;
+margin-bottom:30px;
 }
 
 .hero-highlight{
@@ -91,34 +92,34 @@ font-weight:700;
 .hero-flex{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
-margin-bottom:40px;
+gap:16px;
+margin-bottom:30px;
 }
 
 .price-box{
+flex:1 1 260px;
 background:rgba(10,22,40,0.82);
 border:2px solid #C9A84C;
-padding:25px;
+padding:22px;
 border-radius:18px;
-min-width:240px;
 box-shadow:0 0 30px rgba(201,168,76,0.18);
 backdrop-filter:blur(10px);
 }
 
 .timer-box{
+flex:1 1 260px;
 background:rgba(30,0,0,0.82);
 border:2px solid #ff3b30;
-padding:25px;
+padding:22px;
 border-radius:18px;
-min-width:260px;
 box-shadow:0 0 30px rgba(255,59,48,0.25);
 backdrop-filter:blur(10px);
 animation:pulseBox 1.8s infinite;
 }
 
 .old-price{
-font-size:18px;
-margin-bottom:10px;
+font-size:16px;
+margin-bottom:8px;
 color:#dddddd;
 }
 
@@ -130,40 +131,42 @@ font-weight:700;
 
 .price-now{
 font-family:'Bebas Neue',sans-serif;
-font-size:72px;
+font-size:58px;
 line-height:1;
 color:white;
 }
 
 .price-tag{
-font-size:18px;
+font-size:16px;
 font-weight:700;
 color:#FFD166;
 margin-top:5px;
 }
 
 .timer-label{
-font-size:16px;
-margin-bottom:10px;
+font-size:15px;
+margin-bottom:8px;
 font-weight:600;
 color:white;
 }
 
 .timer-value{
 font-family:'Bebas Neue',sans-serif;
-font-size:58px;
-letter-spacing:3px;
+font-size:42px;
+letter-spacing:2px;
 color:#ff3b30;
 text-shadow:0 0 15px rgba(255,59,48,0.7);
 animation:blinkTimer 1s infinite;
 }
 
 .hero-btn{
-display:inline-block;
+display:block;
+width:100%;
+text-align:center;
 background:linear-gradient(180deg,#ff3b30,#c1121f);
-padding:22px 38px;
+padding:20px 26px;
 border-radius:14px;
-font-size:20px;
+font-size:18px;
 font-weight:700;
 color:white;
 text-decoration:none;
@@ -173,20 +176,21 @@ letter-spacing:0.3px;
 }
 
 .hero-btn:hover{
-transform:translateY(-3px) scale(1.03);
+transform:translateY(-3px) scale(1.02);
 box-shadow:0 18px 40px rgba(255,59,48,0.55);
 background:linear-gradient(180deg,#ff5a52,#d61f26);
 }
 
 .hero-btn:active{
-transform:scale(0.97);
+transform:scale(0.98);
 }
 
 .hero-trust{
-margin-top:18px;
-font-size:14px;
+margin-top:16px;
+font-size:13px;
 color:#dddddd;
-line-height:1.8;
+line-height:1.7;
+text-align:center;
 }
 
 @keyframes blinkTimer{
@@ -205,6 +209,39 @@ box-shadow:0 0 38px rgba(255,59,48,0.35);
 100%{
 box-shadow:0 0 20px rgba(255,59,48,0.15);
 }
+}
+
+@media(max-width:768px){
+
+.hero-wrapper{
+padding:22px 14px 35px;
+}
+
+.hero-title{
+font-size:15vw;
+}
+
+.hero-sub{
+font-size:22px;
+}
+
+.hero-desc{
+font-size:15px;
+}
+
+.price-now{
+font-size:52px;
+}
+
+.timer-value{
+font-size:38px;
+}
+
+.hero-btn{
+font-size:17px;
+padding:18px 20px;
+}
+
 }
 
 </style>
