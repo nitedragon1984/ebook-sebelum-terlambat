@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:transparent;
+color:white;
+overflow-x:hidden;
+}
+
+.hero-wrapper{
+width:100%;
+padding:60px 20px 80px;
+}
+
+.hero-container{
+max-width:1100px;
+margin:auto;
+}
+
+.hero-label{
+display:inline-block;
+background:#d61f26;
+padding:10px 20px;
+border-radius:6px;
+font-size:14px;
+font-weight:700;
+margin-bottom:30px;
+letter-spacing:1px;
+box-shadow:0 5px 18px rgba(214,31,38,0.35);
+}
+
+.hero-title{
+font-family:'Bebas Neue',sans-serif;
+font-size:clamp(54px,9vw,110px);
+line-height:0.9;
+margin:0;
+max-width:760px;
+letter-spacing:1px;
+text-shadow:0 4px 20px rgba(0,0,0,0.35);
+}
+
+.hero-small{
+font-size:0.45em;
+display:block;
+color:#C9A84C;
+margin-bottom:10px;
+}
+
+.hero-gold{
+color:#FFD166;
+text-shadow:0 0 18px rgba(255,209,102,0.35);
+}
+
+.hero-sub{
+font-size:clamp(20px,3vw,30px);
+font-weight:700;
+color:#ff4d4d;
+margin-top:20px;
+margin-bottom:30px;
+}
+
+.hero-desc{
+max-width:620px;
+font-size:18px;
+line-height:1.9;
+color:#f0f0f0;
+margin-bottom:40px;
+}
+
+.hero-highlight{
+color:#FFD166;
+font-weight:700;
+}
+
+.hero-flex{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-bottom:40px;
+}
+
+.price-box{
+background:rgba(10,22,40,0.82);
+border:2px solid #C9A84C;
+padding:25px;
+border-radius:18px;
+min-width:240px;
+box-shadow:0 0 30px rgba(201,168,76,0.18);
+backdrop-filter:blur(10px);
+}
+
+.timer-box{
+background:rgba(30,0,0,0.82);
+border:2px solid #ff3b30;
+padding:25px;
+border-radius:18px;
+min-width:260px;
+box-shadow:0 0 30px rgba(255,59,48,0.25);
+backdrop-filter:blur(10px);
+animation:pulseBox 1.8s infinite;
+}
+
+.old-price{
+font-size:18px;
+margin-bottom:10px;
+color:#dddddd;
+}
+
+.old-price span{
+text-decoration:line-through;
+color:#ff3b30;
+font-weight:700;
+}
+
+.price-now{
+font-family:'Bebas Neue',sans-serif;
+font-size:72px;
+line-height:1;
+color:white;
+}
+
+.price-tag{
+font-size:18px;
+font-weight:700;
+color:#FFD166;
+margin-top:5px;
+}
+
+.timer-label{
+font-size:16px;
+margin-bottom:10px;
+font-weight:600;
+color:white;
+}
+
+.timer-value{
+font-family:'Bebas Neue',sans-serif;
+font-size:58px;
+letter-spacing:3px;
+color:#ff3b30;
+text-shadow:0 0 15px rgba(255,59,48,0.7);
+animation:blinkTimer 1s infinite;
+}
+
+.hero-btn{
+display:inline-block;
+background:linear-gradient(180deg,#ff3b30,#c1121f);
+padding:22px 38px;
+border-radius:14px;
+font-size:20px;
+font-weight:700;
+color:white;
+text-decoration:none;
+box-shadow:0 12px 30px rgba(255,59,48,0.35);
+transition:all .25s ease;
+letter-spacing:0.3px;
+}
+
+.hero-btn:hover{
+transform:translateY(-3px) scale(1.03);
+box-shadow:0 18px 40px rgba(255,59,48,0.55);
+background:linear-gradient(180deg,#ff5a52,#d61f26);
+}
+
+.hero-btn:active{
+transform:scale(0.97);
+}
+
+.hero-trust{
+margin-top:18px;
+font-size:14px;
+color:#dddddd;
+line-height:1.8;
+}
+
+@keyframes blinkTimer{
+0%{opacity:1;}
+50%{opacity:0.72;}
+100%{opacity:1;}
+}
+
+@keyframes pulseBox{
+0%{
+box-shadow:0 0 20px rgba(255,59,48,0.15);
+}
+50%{
+box-shadow:0 0 38px rgba(255,59,48,0.35);
+}
+100%{
+box-shadow:0 0 20px rgba(255,59,48,0.15);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero-wrapper">
+
+<div class="hero-container">
+
+<div class="hero-label">
+SEBELUM TERLAMBAT
+</div>
+
+<h1 class="hero-title">
+
+<span class="hero-small">
+Bila Umur 60 Tahun Nanti...
+</span>
+
+ADAKAH ANDA MASIH
+<br>
+BEKERJA KERANA
+<br>
+
+<span class="hero-gold">
+ANDA MAHU?
+</span>
+
+</h1>
+
+<div class="hero-sub">
+ATAU KERANA ANDA TIADA PILIHAN?
+</div>
+
+<p class="hero-desc">
+Ebook yang membuka mata tentang kuasa masa, simpanan dan pelaburan 
+<span class="hero-highlight">
+sebelum terlambat.
+</span>
+</p>
+
+<div class="hero-flex">
+
+<div class="price-box">
+
+<div class="old-price">
+Harga Asal <span>RM79</span>
+</div>
+
+<div class="price-now">
+RM39
+</div>
+
+<div class="price-tag">
+HARI INI SAHAJA
+</div>
+
+</div>
+
+<div class="timer-box">
+
+<div class="timer-label">
+Tawaran tamat dalam:
+</div>
+
+<div class="timer-value" id="countdown">
+00:00:00
+</div>
+
+</div>
+
+</div>
+
+<a href="#payment-section" class="hero-btn">
+✅ DAPATKAN EBOOK SEKARANG — RM39
+</a>
+
+<div class="hero-trust">
+Format PDF • Dihantar ke email serta-merta • Sokongan WhatsApp
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const countdownDate = new Date("2026-06-20T23:59:59").getTime();
+
+const timer = setInterval(function(){
+
+const now = new Date().getTime();
+const distance = countdownDate - now;
+
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("countdown").innerHTML =
+String(hours).padStart(2,'0') + ":" +
+String(minutes).padStart(2,'0') + ":" +
+String(seconds).padStart(2,'0');
+
+if(distance < 0){
+clearInterval(timer);
+document.getElementById("countdown").innerHTML = "EXPIRED";
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
+```
